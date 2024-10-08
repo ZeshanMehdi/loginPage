@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Boxes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+   
+  .box {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 14px;
+  }
+  
+  .box1 {
+    background-color: #FCFCEF;
+    width: 30%;
+    text-align: center;
+    padding: 5px 0px;
+  }
+  .box1 p{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 16px 0px;
+  }
+  .box2 {
+    background-color: #CDE6C6;
+    text-align: center;
+  }
+  
+  .box3 {
+    background-color: #FCD804;
+    text-align: center;
+    width: 40%;
+    padding: 10px 10px;
+  }
+  
+  .inner-box {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    box-sizing: border-box;
+    background-color: #CDE6C6;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+  
+  .image {
+    width: 25%;
+    margin-bottom: 32px;
+  }
+  
+  input[type="text"], input[type="password"], input[type="checkbox"] {
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 8px 15px;
+    margin: 5px;
+    display: block;
+    box-sizing: border-box;
+    background-color: #FCFCEF;
+    font-family: 'Raleway', sans-serif;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  button {
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 8px 15px;
+    margin: 5px;
+    display: block;
+    width: 30%;
+    box-sizing: border-box;
+    background-color: #FCD804;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  label {
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    width: 56%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+  }
+
+  .btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+input#keep_signed_in {
+    width: 20px;
+    margin: 0;
+}
+label#checkInput {
+    width: 48%;
+    margin: 0px 15px;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box1">
+      <p>Login to MySelena Portal</p>
+    </div>
+
+    <img src="MYSELENA Login Page.png" alt="Image" class="image">
+
+    <div class="box box3">
+      <div class="inner-box">
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" >
+
+        <div class="checkbox">
+        <input type="radio" id="keep_signed_in">
+        <label id="checkInput" for="keep_signed_in">Keep me signed in</label>
+        </div>
+        
+        
+            <div class="btn">
+        <button>Login</button>
+        <button>Register</button>
+    
+            </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
